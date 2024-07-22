@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  standalone: true // Marcando o componente como standalone
+  standalone: true,
+  imports: [RouterModule] // Adicione RouterModule aqui
 })
 export class AppComponent {
   title = 'rockandbleau-project';
